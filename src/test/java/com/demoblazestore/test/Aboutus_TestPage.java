@@ -10,9 +10,14 @@ import com.demoblazestore.pages.About_us;
 public class Aboutus_TestPage extends a_BaseTestPage{
 	
 	@Test
-	public void testAboutus() {
+	public void testClickAboutus() {
 		aboutUs.AboutUsClick();
-		
-		
 	}
+	
+	@Test
+	public void testAboutusPopuptitle() {
+		aboutUs.AboutUsPopTitle();
+	}
+	
+
 }

@@ -6,8 +6,8 @@
       <class name="com.demoblazestore.test.Aboutus_TestPage">
         <methods>
           <include name="setUp"/>
-          <include name="testAboutus"/>
           <include name="setUpReport"/>
+          <include name="testCloseAboutusPop"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.demoblazestore.test.Aboutus_TestPage -->
