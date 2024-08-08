@@ -80,7 +80,7 @@ public class a_BaseTestPage extends DriverScripts {
 	
 		//before quitiing the browser, the Report needs to be flushed.
 		exreports.flush();
-		//quitDriver();
+		quitDriver();
 	}
 
 }

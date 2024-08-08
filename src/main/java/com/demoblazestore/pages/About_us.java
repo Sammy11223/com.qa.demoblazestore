@@ -1,9 +1,15 @@
 package com.demoblazestore.pages;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.demoblazestore.base.DriverScripts;
 
@@ -11,11 +17,14 @@ public class About_us extends DriverScripts{
 	
 	//********8888weblocators*************
 	
-	@FindBy(linkText ="About us") private WebElement about_us;
+	@FindBy(xpath="//a[@class='nav-link' and @data-target='#videoModal']") private WebElement about_us;
 
-	@FindBy(xpath="//h5[@class='modal-title' and @id ='videoModalLabel']") private WebElement about_us_pop_title;
+	@FindBy(xpath="//h5[@class='modal-title' and @id ='videoModalLabel']") private WebElement about_us_pop_Title;
 	
-	@FindBy(linkText="Close")private WebElement close_about_us;
+	@FindBy(xpath="(//span[@class='vjs-icon-placeholder'])[1]") private WebElement playbutton_displayed;
+	
+	@FindBy(linkText="Play Video") private WebElement playVideo;
+	
 	
 	public About_us() {
 		//driver element is coming from DriverScripts, this element is coming from the line 15 for the loginLinks
@@ -27,14 +36,32 @@ public class About_us extends DriverScripts{
 		about_us.click();
 		}
 	
-	public void AboutUsPopTitle() {
-		//String text_Aboutus = about_us_pop_title.getText();
-		//System.out.println("the test is: "+ text_Aboutus);
-		
-	}
-	public void AboutusPopPageClose() {
-		//driver.switchTo().alert().dismiss();
-		close_about_us.click();
+	
+	public void AboutUsgetText_popup() {
+		about_us_pop_Title.getText();
 	}
 	
+	public void AboutusPlayisDisplayed() {
+	new WebDriverWait(driver, Duration.ofSeconds(30));
+	playbutton_displayed.isDisplayed();
 	}
+	
+	public void clickplaybuttonPlay() {
+		playVideo.click();
+	}
+		
+	
+		
+		
+		/*
+		Actions action = new Actions(driver);
+
+		WebElement element =driver.findElement(By.xpath("(//span[@class='vjs-icon-placeholder'])[1] "));
+
+		action.moveToElement(element).click().perform();
+		
+		//driver.switchTo().alert().dismiss();
+		driver.click(); */
+	}
+	
+	
