@@ -21,6 +21,7 @@ import com.demoblazestore.pages.Cart;
 import com.demoblazestore.pages.Contact;
 import com.demoblazestore.pages.Home;
 import com.demoblazestore.pages.Login;
+import com.demoblazestore.pages.Product_Store;
 import com.demoblazestore.pages.Sign_up;
 import com.demoblazestore.utils.HelperUtility;
 
@@ -39,6 +40,7 @@ public class a_BaseTestPage extends DriverScripts {
 	Contact contactpage;
 	Cart cartpage;
 	About_us aboutUs;
+	Product_Store productpage;
 	
 	@BeforeSuite
 	public void setUpReport() {
@@ -61,6 +63,7 @@ public class a_BaseTestPage extends DriverScripts {
 		contactpage = new Contact();
 		cartpage = new Cart();
 		aboutUs = new About_us();
+		productpage = new Product_Store();
 		
 		
 	}

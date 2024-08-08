@@ -41,19 +41,7 @@ public class About_us extends DriverScripts{
 		about_us_pop_Title.getText();
 	}
 	
-	public void AboutusPlayisDisplayed() {
-	new WebDriverWait(driver, Duration.ofSeconds(30));
-	playbutton_displayed.isDisplayed();
-	}
-	
-	public void clickplaybuttonPlay() {
-		playVideo.click();
-	}
-		
-	public void clickyourplaybuttonPlay() {
-		playVideo.click();
-	}
-		
+
 	
 		
 		

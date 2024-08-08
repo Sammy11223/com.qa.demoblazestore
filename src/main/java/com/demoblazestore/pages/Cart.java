@@ -18,10 +18,11 @@ public class Cart extends DriverScripts{
 		PageFactory.initElements(driver, this);
 	}
 	
+	//**methods***
 	public void clickCart() {
 		cart.click();
 	}
 	
-	//**methods***
+
 
 }
