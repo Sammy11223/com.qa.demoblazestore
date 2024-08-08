@@ -50,6 +50,10 @@ public class About_us extends DriverScripts{
 		playVideo.click();
 	}
 		
+	public void clickyourplaybuttonPlay() {
+		playVideo.click();
+	}
+		
 	
 		
 		
