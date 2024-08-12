@@ -5,14 +5,22 @@ import com.demoblazestore.pages.Login;
 
 public class Login_TestPage extends a_BaseTestPage  {
 
-	@Test
+	@Test(priority = 1)
 	public void testLoginclick() throws InterruptedException {
-		Login login = new Login();
-		login.loginLink_click();
+		//Login login = new Login();
+		loginpage.loginLink_click();
 		Thread.sleep(10000);
-		login.userName_Entry();
-		login.passwordEntry();
-		login.loginButtonClick();
+		
+		
+	}
+	@Test(priority = 2)
+	public void testLoginPageUserEntry() throws InterruptedException {
+		loginpage.loginLink_click();
+		loginpage.userName_Entry();
+		loginpage.passwordEntry();
+		loginpage.loginButtonClick();
+		Thread.sleep(10000);
+		
 	}
 
 }
