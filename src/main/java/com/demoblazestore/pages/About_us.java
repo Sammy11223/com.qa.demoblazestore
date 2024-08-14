@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 
 import com.demoblazestore.base.DriverScripts;
 
@@ -31,18 +32,27 @@ public class About_us extends DriverScripts{
 		PageFactory.initElements(driver, this);
 
 }
-	
+	//methods
 	public void AboutUsClick() {
 		about_us.click();
 		}
 	
-	
-	public void AboutUsgetText_popup() {
-		about_us_pop_Title.getText();
+public void AboutUs_play_video() {
+	playVideo.click();
 	}
-	
 
 	
+
+
+
+
+
+
+
+
+
+
+
 		
 		
 		/*
