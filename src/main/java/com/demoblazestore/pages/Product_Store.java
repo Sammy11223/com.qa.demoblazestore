@@ -21,6 +21,8 @@ public class Product_Store extends DriverScripts{
 	public Product_Store() {
 		//driver element is coming from DriverScripts, this element is coming from the line 15 for the loginLinks
 		PageFactory.initElements(driver, this);
+	
+		
 	}
 
 	//*****methods********

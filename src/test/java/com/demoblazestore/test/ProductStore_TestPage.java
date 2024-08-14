@@ -1,45 +1,56 @@
 package com.demoblazestore.test;
-
-import org.openqa.selenium.WindowType;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import com.demoblazestore.pages.Product_Store;
-import com.google.common.annotations.VisibleForTesting;
-
+import com.demoblazestore.pages.Login;
+import com.demoblazestore.test.Login_TestPage;
 public class ProductStore_TestPage extends a_BaseTestPage {
 	
 	
-	@Test(priority=1)
-	public void testClickProduct_store_link() {
-		productpage.product_store_click();
 		
+	/*@Test(priority=2)
+	public void testClickProduct_store_link() {
+		productpage.product_store_click();		
 	}
-	@Test(priority=2)
-	public void testClickSamsunggalaxy6() {
+	*/
+	@Test(priority =1)
+	public  void accessthelogin_link() throws InterruptedException {
+		//testLoginPageUserEntry()
+		//Login_TestPage login_tp = new Login_TestPage();
+		//login_tp.testLoginPageUserEntry();}
+		
+		
+		loginpage.loginLink_click();
+		loginpage.userName_Entry();
+		loginpage.passwordEntry();
+		loginpage.loginButtonClick();
+		Thread.sleep(3000);	
+	} 
+	
+	@Test (priority =2)
+	public void testClick_product_storelink() throws InterruptedException {
+		//just testing if the product store link works or not??
 		productpage.product_store_click();
 		productpage.samsunggalaxy_s6_click();
+		Thread.sleep(4000);
 	}
+
 	
 	@Test(priority =3)
 	public void testSamsung_6_productpage_Addtocart() throws InterruptedException {
+		//accessthelogin_link();
+		accessthelogin_link();
+		//validate the welcome text
+		//now go to product and add the samsung_6
+		Thread.sleep(4000);
 		productpage.product_store_click();
 		productpage.samsunggalaxy_s6_click();
 		productpage.addtoCart_samsung_6();
-		Thread.sleep(300);
-		
+		Thread.sleep(300);		
 		String gettext = driver.switchTo().alert().getText();
 		System.out.println(gettext);
 //I creaTED the method for alert accept/dismiss in the driverscript, so that it can be 
 		//called here with just the method name [ could be accept or dismiss]
 		switchtoAlertAccept();
-		System.out.println("Samsung_6_addedtocart");
-		
-	
-		
-	}
-	
-	
-	
-
+		Thread.sleep(4000);
+		System.out.println("Samsung_6_addedtocart");				
+	}	
 }
