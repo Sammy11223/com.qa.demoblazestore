@@ -3,16 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoblazestore.test.ProductStore_TestPage">
+      <class name="com.demoblazestore.test.Home_TestPage">
         <methods>
-          <include name="accessthelogin_link"/>
           <include name="setUp"/>
+          <include name="testContactclick"/>
+          <include name="testLoginclick"/>
           <include name="setUpReport"/>
+          <include name="testAboutusclick"/>
+          <include name="testSignupclick"/>
+          <include name="testCartclick"/>
+          <include name="testHomeclick"/>
           <include name="tearDown"/>
-          <include name="testSamsung_6_productpage_Addtocart"/>
-          <include name="testClick_product_storelink"/>
         </methods>
-      </class> <!-- com.demoblazestore.test.ProductStore_TestPage -->
+      </class> <!-- com.demoblazestore.test.Home_TestPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

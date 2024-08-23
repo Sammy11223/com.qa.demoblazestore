@@ -1,74 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-14T15:53:39 PDT" name="Default suite" finished-at="2024-08-14T15:54:46 PDT" duration-ms="67348">
+  <suite started-at="2024-08-23T09:45:57 PDT" name="Default suite" finished-at="2024-08-23T09:47:07 PDT" duration-ms="69896">
     <groups>
     </groups>
-    <test started-at="2024-08-14T15:53:39 PDT" name="Default test" finished-at="2024-08-14T15:54:46 PDT" duration-ms="67348">
-      <class name="com.demoblazestore.test.ProductStore_TestPage">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:53:37 PDT" name="setUpReport" finished-at="2024-08-14T15:53:39 PDT" duration-ms="1736" status="PASS">
+    <test started-at="2024-08-23T09:45:57 PDT" name="Default test" finished-at="2024-08-23T09:47:07 PDT" duration-ms="69896">
+      <class name="com.demoblazestore.test.Home_TestPage">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:45:56 PDT" name="setUpReport" finished-at="2024-08-23T09:45:57 PDT" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:53:39 PDT" name="setUp" finished-at="2024-08-14T15:53:53 PDT" duration-ms="14552" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:45:57 PDT" name="setUp" finished-at="2024-08-23T09:46:02 PDT" duration-ms="5657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="accessthelogin_link()[pri:1, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:53:53 PDT" name="accessthelogin_link" finished-at="2024-08-14T15:54:00 PDT" duration-ms="6833" status="PASS">
+        <test-method signature="testHomeclick()[pri:1, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:02 PDT" name="testHomeclick" finished-at="2024-08-23T09:46:05 PDT" duration-ms="3069" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accessthelogin_link -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:54:00 PDT" name="tearDown" finished-at="2024-08-14T15:54:02 PDT" duration-ms="2266" status="PASS">
+        </test-method> <!-- testHomeclick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:05 PDT" name="tearDown" finished-at="2024-08-23T09:46:06 PDT" duration-ms="339" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=accessthelogin_link status=SUCCESS method=ProductStore_TestPage.accessthelogin_link()[pri:1, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76] output={null}]]]>
+                <![CDATA[[TestResult name=testHomeclick status=SUCCESS method=Home_TestPage.testHomeclick()[pri:1, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:54:02 PDT" name="setUp" finished-at="2024-08-14T15:54:10 PDT" duration-ms="7902" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:06 PDT" name="setUp" finished-at="2024-08-23T09:46:09 PDT" duration-ms="3353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testClick_product_storelink()[pri:2, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:54:10 PDT" name="testClick_product_storelink" finished-at="2024-08-14T15:54:17 PDT" duration-ms="6257" status="PASS">
+        <test-method signature="testContactclick()[pri:2, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:09 PDT" name="testContactclick" finished-at="2024-08-23T09:46:12 PDT" duration-ms="3068" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testClick_product_storelink -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:54:17 PDT" name="tearDown" finished-at="2024-08-14T15:54:19 PDT" duration-ms="2061" status="PASS">
+        </test-method> <!-- testContactclick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:12 PDT" name="tearDown" finished-at="2024-08-23T09:46:13 PDT" duration-ms="305" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testClick_product_storelink status=SUCCESS method=ProductStore_TestPage.testClick_product_storelink()[pri:2, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76] output={null}]]]>
+                <![CDATA[[TestResult name=testContactclick status=SUCCESS method=Home_TestPage.testContactclick()[pri:2, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:54:19 PDT" name="setUp" finished-at="2024-08-14T15:54:25 PDT" duration-ms="6668" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:13 PDT" name="setUp" finished-at="2024-08-23T09:46:16 PDT" duration-ms="3203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSamsung_6_productpage_Addtocart()[pri:3, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:54:25 PDT" name="testSamsung_6_productpage_Addtocart" finished-at="2024-08-14T15:54:44 PDT" duration-ms="18489" status="PASS">
+        <test-method signature="testAboutusclick()[pri:3, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:16 PDT" name="testAboutusclick" finished-at="2024-08-23T09:46:20 PDT" duration-ms="3857" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSamsung_6_productpage_Addtocart -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76]" started-at="2024-08-14T15:54:44 PDT" name="tearDown" finished-at="2024-08-14T15:54:46 PDT" duration-ms="2077" status="PASS">
+        </test-method> <!-- testAboutusclick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:20 PDT" name="tearDown" finished-at="2024-08-23T09:46:20 PDT" duration-ms="354" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSamsung_6_productpage_Addtocart status=SUCCESS method=ProductStore_TestPage.testSamsung_6_productpage_Addtocart()[pri:3, instance:com.demoblazestore.test.ProductStore_TestPage@4b013c76] output={null}]]]>
+                <![CDATA[[TestResult name=testAboutusclick status=SUCCESS method=Home_TestPage.testAboutusclick()[pri:3, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demoblazestore.test.ProductStore_TestPage -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:20 PDT" name="setUp" finished-at="2024-08-23T09:46:23 PDT" duration-ms="3473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartclick()[pri:4, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:23 PDT" name="testCartclick" finished-at="2024-08-23T09:46:26 PDT" duration-ms="3081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartclick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:26 PDT" name="tearDown" finished-at="2024-08-23T09:46:27 PDT" duration-ms="250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCartclick status=SUCCESS method=Home_TestPage.testCartclick()[pri:4, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:27 PDT" name="setUp" finished-at="2024-08-23T09:46:30 PDT" duration-ms="3125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginclick()[pri:5, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:30 PDT" name="testLoginclick" finished-at="2024-08-23T09:46:33 PDT" duration-ms="3055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginclick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:33 PDT" name="tearDown" finished-at="2024-08-23T09:46:33 PDT" duration-ms="322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginclick status=SUCCESS method=Home_TestPage.testLoginclick()[pri:5, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:33 PDT" name="setUp" finished-at="2024-08-23T09:46:36 PDT" duration-ms="3237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignupclick()[pri:6, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:36 PDT" name="testSignupclick" finished-at="2024-08-23T09:46:40 PDT" duration-ms="3077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignupclick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:40 PDT" name="tearDown" finished-at="2024-08-23T09:46:40 PDT" duration-ms="398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSignupclick status=SUCCESS method=Home_TestPage.testSignupclick()[pri:6, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:40 PDT" name="setUp" finished-at="2024-08-23T09:46:43 PDT" duration-ms="3239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testphonesTabclick()[pri:7, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:43 PDT" name="testphonesTabclick" finished-at="2024-08-23T09:46:46 PDT" duration-ms="3084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testphonesTabclick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:46 PDT" name="tearDown" finished-at="2024-08-23T09:46:47 PDT" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testphonesTabclick status=SUCCESS method=Home_TestPage.testphonesTabclick()[pri:7, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:47 PDT" name="setUp" finished-at="2024-08-23T09:46:50 PDT" duration-ms="3341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testlaptopsTabclick()[pri:8, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:50 PDT" name="testlaptopsTabclick" finished-at="2024-08-23T09:46:53 PDT" duration-ms="3067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlaptopsTabclick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:53 PDT" name="tearDown" finished-at="2024-08-23T09:46:53 PDT" duration-ms="291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testlaptopsTabclick status=SUCCESS method=Home_TestPage.testlaptopsTabclick()[pri:8, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:53 PDT" name="setUp" finished-at="2024-08-23T09:46:56 PDT" duration-ms="3162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testmonitorsTabclick()[pri:9, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:46:56 PDT" name="testmonitorsTabclick" finished-at="2024-08-23T09:47:00 PDT" duration-ms="3052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmonitorsTabclick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:47:00 PDT" name="tearDown" finished-at="2024-08-23T09:47:00 PDT" duration-ms="363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testmonitorsTabclick status=SUCCESS method=Home_TestPage.testmonitorsTabclick()[pri:9, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:47:00 PDT" name="setUp" finished-at="2024-08-23T09:47:03 PDT" duration-ms="3123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testHomeLink()[pri:10, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:47:03 PDT" name="testHomeLink" finished-at="2024-08-23T09:47:06 PDT" duration-ms="3162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomeLink -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoblazestore.test.Home_TestPage@1c5920df]" started-at="2024-08-23T09:47:06 PDT" name="tearDown" finished-at="2024-08-23T09:47:07 PDT" duration-ms="368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testHomeLink status=SUCCESS method=Home_TestPage.testHomeLink()[pri:10, instance:com.demoblazestore.test.Home_TestPage@1c5920df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoblazestore.test.Home_TestPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
