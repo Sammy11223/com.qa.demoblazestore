@@ -12,8 +12,7 @@ public class Home_TestPage extends a_BaseTestPage {
 	@Test(priority = 1)
 	public void testHomeclick() throws InterruptedException {
 		// logger = report.createTest("test Home page click");
-		Home home = new Home();
-		String text = home.getHomeText();
+		String text = homepage.getHomeText();
 		System.out.println(text);
 		Assert.assertTrue(true, text);
 		Thread.sleep(3000);
@@ -22,32 +21,28 @@ public class Home_TestPage extends a_BaseTestPage {
 
 	@Test(priority = 2)
 	public void testContactclick() throws InterruptedException {
-		Home home = new Home();
-		String text = home.getcontactButtonText();
+		String text = homepage.getcontactButtonText();
 		System.out.println(text);
 		Thread.sleep(3000);
 	}
 
 	@Test(priority = 3)
 	public void testAboutusclick() throws InterruptedException {
-		Home home = new Home();
-		String text = home.getaboutusButtonText();
+		String text = homepage.getaboutusButtonText();
 		System.out.println(text);
 		Thread.sleep(3000);
 	}
 
 	@Test(priority = 4)
 	public void testCartclick() throws InterruptedException {
-		Home home = new Home();
-		String text = home.getcartButtonText();
+		String text = homepage.getcartButtonText();
 		System.out.println(text);
 		Thread.sleep(3000);
 	}
 
 	@Test(priority = 5)
 	public void testLoginclick() throws InterruptedException {
-		Home home = new Home();
-		String text = home.getloginButtonText();
+		String text = homepage.getloginButtonText();
 		System.out.println(text);
 		Thread.sleep(3000);
 	}
@@ -55,41 +50,37 @@ public class Home_TestPage extends a_BaseTestPage {
 	@Test(priority = 6)
 	public void testSignupclick() throws InterruptedException {
 		Home home = new Home();
-		String text = home.getsignupButtonText();
+		String text = homepage.getsignupButtonText();
 		System.out.println(text);
 		Thread.sleep(3000);
 	}
 
 	@Test(priority = 7)
 	public void testphonesTabclick() throws InterruptedException {
-		Home home = new Home();
-		String text = home.getphonesTabText();
+		String text = homepage.getphonesTabText();
 		System.out.println(text);
 		Thread.sleep(3000);
 	}
 
 	@Test(priority = 8)
 	public void testlaptopsTabclick() throws InterruptedException {
-		Home home = new Home();
-		String text = home.getlaptopsTabText();
+		String text = homepage.getlaptopsTabText();
 		System.out.println(text);
 		Thread.sleep(3000);
 	}
 
 	@Test(priority = 9)
 	public void testmonitorsTabclick() throws InterruptedException {
-		Home home = new Home();
-		String text = home.getmonitorsTabText();
+		String text = homepage.getmonitorsTabText();
 		System.out.println(text);
 		Thread.sleep(3000);
 	}
 
 	@Test(priority = 10)
 	public void testHomeLink() throws InterruptedException {
-		Home home = new Home();
-		home.monitorsTab_click();
+		homepage.monitorsTab_click();
 		Thread.sleep(3000);
-		String pageTitle = home.getHomePageTitle();
+		String pageTitle = homepage.getHomePageTitle();
 		System.out.println(pageTitle);
 		Assert.assertTrue(true, pageTitle);
 	}
