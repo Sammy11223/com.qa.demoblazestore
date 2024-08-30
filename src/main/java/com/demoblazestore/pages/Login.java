@@ -33,15 +33,13 @@ public class Login extends DriverScripts {
 		loginLink_homepage.click();
 	}
 
-	public void userName_Entry() {
-		//loginUsernameTextBox.sendKeys("hji88");
-		loginUsernameTextBox.sendKeys("jen1000");
+	public void userName_Entry(String username) {
+		loginUsernameTextBox.sendKeys(username);
 		
 	}
 
-	public void passwordEntry() {
-		//loginPasswordTextBox.sendKeys("1234");
-		loginPasswordTextBox.sendKeys("jkl122");
+	public void passwordEntry(String password) {
+		loginPasswordTextBox.sendKeys(password);
 	}
 
 	public void loginButtonClick() {
