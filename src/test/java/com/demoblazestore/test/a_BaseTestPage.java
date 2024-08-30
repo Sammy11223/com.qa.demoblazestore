@@ -63,7 +63,7 @@ public class a_BaseTestPage extends DriverScripts {
 		contactpage = new Contact();
 		cartpage = new Cart();
 		aboutUs = new About_us();
-		//productpage = new Product_Store();
+		productpage = new Product_Store();
 		
 		
 	}

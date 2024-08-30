@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,6 +19,7 @@ public class DriverScripts {
 	public static WebDriver driver; // this is public because we need to call the webdriver driver element from another classes which will extends the DriverScripts class
 	//using the static variable becuase it is  the class level variable, and can be accessed within the class without creating an Object
 	public static WebDriverWait wait;
+	public static Alert alert;
 
 	static Properties prop;
 	
@@ -89,11 +91,17 @@ public class DriverScripts {
 	/*
 	 * this method is used to quit the Url
 	 */
+	public static void switchtoAlertAccept() {
+		driver.switchTo().alert().accept();	
+		}
 	
-	
+	public static void switchtoAlertDismiss() {
+		driver.switchTo().alert().dismiss();
+	}
 		public static void quitDriver() {
-			driver.quit();		}
+			driver.quit();		
+			}
 
-}
-		
+
+}		
 	

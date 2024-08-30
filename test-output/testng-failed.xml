@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
@@ -14,3 +15,26 @@
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.demoblazestore.test.Home_TestPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="testContactclick"/>
+          <include name="testLoginclick"/>
+          <include name="setUpReport"/>
+          <include name="testAboutusclick"/>
+          <include name="testSignupclick"/>
+          <include name="testCartclick"/>
+          <include name="testHomeclick"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demoblazestore.test.Home_TestPage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> branch 'main' of git@github.com:Sammy11223/com.qa.demoblazestore.git

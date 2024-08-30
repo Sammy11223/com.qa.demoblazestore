@@ -24,8 +24,9 @@ public class Login extends DriverScripts {
 	
 	//WebElement login_Button;
 
-	public Login() {
+	public  Login() {
 		PageFactory.initElements(driver, this);
+		
 	}
 
 	public void loginLink_click() {
@@ -33,12 +34,14 @@ public class Login extends DriverScripts {
 	}
 
 	public void userName_Entry() {
-		loginUsernameTextBox.sendKeys("hji88");
+		//loginUsernameTextBox.sendKeys("hji88");
+		loginUsernameTextBox.sendKeys("jen1000");
+		
 	}
 
 	public void passwordEntry() {
-		loginPasswordTextBox.sendKeys("1234");
-
+		//loginPasswordTextBox.sendKeys("1234");
+		loginPasswordTextBox.sendKeys("jkl122");
 	}
 
 	public void loginButtonClick() {
