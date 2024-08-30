@@ -37,13 +37,13 @@ public class Sign_up extends DriverScripts {
 
 	}
 	
-	public void signupUserEntry() {
-		userNameTextbox.sendKeys("jen1000");
+	public void signupUserEntry(String SignupName) {
+		userNameTextbox.sendKeys(SignupName);
 	
 	}
 	
-	public void signupPasswordEntry() {
-		userPasswordTextbox.sendKeys("jkl122");
+	public void signupPasswordEntry(String SignupPassword) {
+		userPasswordTextbox.sendKeys(SignupPassword);
 	}
 	
 	public void signupButtonClick() {

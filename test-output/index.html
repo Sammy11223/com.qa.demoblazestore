@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\kalra\AppData\Local\Temp\testng-eclipse-1391077040\testng-customsuite.xml</span>
+                    <span>C:\Users\kalra\AppData\Local\Temp\testng-eclipse--1951641662\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.demoblazestore.test.Login_TestPage" class="method navigator-link" hash-for-method="testLoginclick">testLoginclick</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.demoblazestore.test.Signup_TestPage" class="method navigator-link" hash-for-method="testPopupTextVerification">testPopupTextVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.demoblazestore.test.Signup_TestPage" class="method navigator-link" hash-for-method="testSignup_click">testSignup_click</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +126,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.demoblazestore.test.Login_TestPage</span>
+              <span class="class-name">com.demoblazestore.test.Signup_TestPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLoginclick">
-                  </a> <!-- testLoginclick -->
-                  <span class="method-name">testLoginclick</span>
+                  <a name="testPopupTextVerification">
+                  </a> <!-- testPopupTextVerification -->
+                  <span class="method-name">testPopupTextVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignup_click">
+                  </a> <!-- testSignup_click -->
+                  <span class="method-name">testSignup_click</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +148,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kalra\AppData\Local\Temp\testng-eclipse-1391077040\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\kalra\AppData\Local\Temp\testng-eclipse--1951641662\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,11 +157,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.demoblazestore.test.Login_TestPage&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testLoginclick&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.demoblazestore.test.Login_TestPage --&gt;
+      &lt;class name=&quot;com.demoblazestore.test.Signup_TestPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -189,16 +197,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLoginclick')
-data.setCell(0, 2, 'com.demoblazestore.test.Login_TestPage')
-data.setCell(0, 3, 155);
+data.setCell(0, 1, 'testSignup_click')
+data.setCell(0, 2, 'com.demoblazestore.test.Signup_TestPage')
+data.setCell(0, 3, 10636);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testPopupTextVerification')
+data.setCell(1, 2, 'com.demoblazestore.test.Signup_TestPage')
+data.setCell(1, 3, 409);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 155 ms</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,16 +225,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.demoblazestore.test.Login_TestPage</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testLoginPageUserEntry</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -231,22 +236,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demoblazestore.test.Login_TestPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.demoblazestore.test.Signup_TestPage</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUpReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">166 ms</span>
+                <span class="method-start">190 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testLoginclick</span>
-                <span class="method-start">3717 ms</span>
+                <span class="method-name">testSignup_click</span>
+                <span class="method-start">3572 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testLoginclick status=SUCCESS method=Login_TestPage.testLoginclick()[pri:1, instanc...)</span>
-                <span class="method-start">3876 ms</span>
+                <span class="method-name">tearDown([TestResult name=testSignup_click status=SUCCESS method=Signup_TestPage.testSignup_click()[pri:1, in...)</span>
+                <span class="method-start">14212 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPopupTextVerification</span>
+                <span class="method-start">17358 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testPopupTextVerification status=SUCCESS method=Signup_TestPage.testPopupTextVerifi...)</span>
+                <span class="method-start">17767 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

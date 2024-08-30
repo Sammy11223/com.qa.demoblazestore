@@ -13,8 +13,8 @@ public class Signup_TestPage extends a_BaseTestPage {
 	public void testSignup_click() throws InterruptedException {
 		signuppage.signupLink_click();
 		Thread.sleep(10000);
-		signuppage.signupUserEntry();
-		signuppage.signupPasswordEntry();
+		signuppage.signupUserEntry("jen10000");
+		signuppage.signupPasswordEntry("mkl1222");
 		signuppage.signupButtonClick();
 	}
 	@Test(priority = 2)
