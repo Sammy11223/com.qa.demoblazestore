@@ -11,12 +11,16 @@ public class Signup_TestPage extends a_BaseTestPage {
 
 	@Test(priority = 1)
 	public void testSignup_click() throws InterruptedException {
-		//Sign_up signuppage = new Sign_up();
 		signuppage.signupLink_click();
 		Thread.sleep(10000);
 		signuppage.signupUserEntry();
 		signuppage.signupPasswordEntry();
 		signuppage.signupButtonClick();
+	}
+	@Test(priority = 2)
+	public void testPopupTextVerification() {
+		signuppage.signupLink_click();
+        signuppage.signupPopupTextVerification();
 	}
 
 }
