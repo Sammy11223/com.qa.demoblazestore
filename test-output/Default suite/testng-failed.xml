@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoblazestore.test.Signup_TestPage">
+      <class name="com.demoblazestore.test.ProductStore_TestPage">
         <methods>
-          <include name="testPopupTextVerification"/>
           <include name="setUp"/>
-          <include name="testSignup_click"/>
           <include name="setUpReport"/>
           <include name="tearDown"/>
+          <include name="testSamsung_6_productpage_Addtocart"/>
         </methods>
-      </class> <!-- com.demoblazestore.test.Signup_TestPage -->
+      </class> <!-- com.demoblazestore.test.ProductStore_TestPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
