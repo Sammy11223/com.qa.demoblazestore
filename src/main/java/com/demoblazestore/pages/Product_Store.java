@@ -5,7 +5,7 @@ import java.sql.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import com.demoblazestore.pages.Login;
 import com.demoblazestore.base.DriverScripts;
 
 public class Product_Store extends DriverScripts{
@@ -26,6 +26,8 @@ public class Product_Store extends DriverScripts{
 	}
 
 	//*****methods********
+	
+	
 	
 	public void product_store_click() {
 		product_store_link.click();

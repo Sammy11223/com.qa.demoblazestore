@@ -89,16 +89,24 @@ public class DriverScripts {
 		}
 	
 	/*
-	 * this method is used to quit the Url
+	 * this two methods below will help us with the alerts
 	 */
+	
+	//below is the method for accepting alert
 	public static void switchtoAlertAccept() {
 		driver.switchTo().alert().accept();	
 		}
 	
+	//below is the method for dismissing alert
 	public static void switchtoAlertDismiss() {
 		driver.switchTo().alert().dismiss();
 	}
-		public static void quitDriver() {
+		
+	/*
+	 * this method is used to quit the Url
+	 */
+	
+	public static void quitDriver() {
 			driver.quit();		
 			}
 

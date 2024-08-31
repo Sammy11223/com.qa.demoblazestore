@@ -9,6 +9,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -43,6 +44,8 @@ public class a_BaseTestPage extends DriverScripts {
 	Product_Store productpage;
 	
 	@BeforeSuite
+
+	
 	public void setUpReport() {
 		//give the path where you want the report to be generated
 		  extenthtmlreport = new ExtentHtmlReporter("./reports/index_"+System.currentTimeMillis()+".html ");
@@ -53,7 +56,8 @@ public class a_BaseTestPage extends DriverScripts {
 		 
 		 exreports.attachReporter(extenthtmlreport);
 	}
-
+	
+	
 	@BeforeMethod
 	public void setUp() {
 		initializationofApplication();

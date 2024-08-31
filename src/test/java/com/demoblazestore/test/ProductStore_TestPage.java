@@ -2,6 +2,8 @@ package com.demoblazestore.test;
 import org.testng.annotations.Test;
 import com.demoblazestore.pages.Login;
 import com.demoblazestore.test.Login_TestPage;
+import com.demoblazestore.test.Home_TestPage;
+import com.demoblazestore.pages.Home;
 public class ProductStore_TestPage extends a_BaseTestPage {
 	
 	
@@ -13,11 +15,17 @@ public class ProductStore_TestPage extends a_BaseTestPage {
 	*/
 	@Test(priority =1)
 	public  void accessthelogin_link() throws InterruptedException {
-		//testLoginPageUserEntry()
+		
+		//testLoginPageUserEntry();
 		//Login_TestPage login_tp = new Login_TestPage();
 		//login_tp.testLoginPageUserEntry();}
-		
-		
+		/*		working code before the hardcoded values for Login_page(username, pswd, and clickloginbutton)
+		loginpage.loginLink_click();
+		loginpage.userName_Entry();
+		loginpage.passwordEntry();
+		loginpage.loginButtonClick();
+		Thread.sleep(3000);	
+		*/
 		loginpage.loginLink_click();
 		loginpage.userName_Entry();
 		loginpage.passwordEntry();
@@ -28,12 +36,12 @@ public class ProductStore_TestPage extends a_BaseTestPage {
 	@Test (priority =2)
 	public void testClick_product_storelink() throws InterruptedException {
 		//just testing if the product store link works or not??
+		//((Login_TestPage) loginpage).Login_TestPage();
 		productpage.product_store_click();
 		productpage.samsunggalaxy_s6_click();
 		Thread.sleep(4000);
 	}
 
-	
 	@Test(priority =3)
 	public void testSamsung_6_productpage_Addtocart() throws InterruptedException {
 		//accessthelogin_link();
@@ -53,4 +61,6 @@ public class ProductStore_TestPage extends a_BaseTestPage {
 		Thread.sleep(4000);
 		System.out.println("Samsung_6_addedtocart");				
 	}	
+	
+
 }
