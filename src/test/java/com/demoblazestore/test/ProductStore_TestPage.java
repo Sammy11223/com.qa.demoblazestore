@@ -27,8 +27,8 @@ public class ProductStore_TestPage extends a_BaseTestPage {
 		Thread.sleep(3000);	
 		*/
 		loginpage.loginLink_click();
-		loginpage.userName_Entry();
-		loginpage.passwordEntry();
+		loginpage.userName_Entry("jen1000");
+		loginpage.passwordEntry("jkl122");
 		loginpage.loginButtonClick();
 		Thread.sleep(3000);	
 	} 

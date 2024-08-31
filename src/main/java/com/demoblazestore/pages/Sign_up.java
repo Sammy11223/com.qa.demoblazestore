@@ -1,6 +1,8 @@
 package com.demoblazestore.pages;
 
 import java.time.Duration;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +12,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
 import com.demoblazestore.base.DriverScripts;
 
 public class Sign_up extends DriverScripts {
@@ -33,16 +37,24 @@ public class Sign_up extends DriverScripts {
 
 	}
 	
-	public void signupUserEntry() {
-		userNameTextbox.sendKeys("jen1000");
+	public void signupUserEntry(String SignupName) {
+		userNameTextbox.sendKeys(SignupName);
 	
 	}
 	
-	public void signupPasswordEntry() {
-		userPasswordTextbox.sendKeys("jkl122");
+	public void signupPasswordEntry(String SignupPassword) {
+		userPasswordTextbox.sendKeys(SignupPassword);
 	}
 	
 	public void signupButtonClick() {
 		signUpButton.click();
 	}
+	public void signupPopupTextVerification() {
+		signupButtonClick();
+		Alert alert = driver.switchTo().alert();
+		String popupText = alert.getText();
+		Assert.assertEquals(popupText, "Please fill out Username and Password.");
+	
+	}
+	
 }
