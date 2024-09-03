@@ -6,12 +6,15 @@ import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
 
+import javax.lang.model.element.Element;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
@@ -94,13 +97,14 @@ public class DriverScripts {
 	
 	//below is the method for accepting alert
 	public static void switchtoAlertAccept() {
-		driver.switchTo().alert().accept();	
+		driver.switchTo().alert().accept();
 		}
 	
 	//below is the method for dismissing alert
 	public static void switchtoAlertDismiss() {
 		driver.switchTo().alert().dismiss();
 	}
+
 		
 	/*
 	 * this method is used to quit the Url

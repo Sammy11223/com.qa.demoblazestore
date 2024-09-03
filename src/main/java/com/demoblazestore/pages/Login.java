@@ -20,6 +20,7 @@ public class Login extends DriverScripts {
 	@FindBy(id = "loginusername") private WebElement loginUsernameTextBox;
 	@FindBy(id = "loginpassword") private WebElement loginPasswordTextBox;
 	@FindBy(xpath = "//button[contains(@class, 'btn btn-primary') and contains(text(), 'Log in')]") private WebElement loginFormButton;
+	@FindBy(id = "nameofuser") private WebElement welcomeUserHomePage;
 
 	
 	//WebElement login_Button;
@@ -46,5 +47,17 @@ public class Login extends DriverScripts {
 		loginFormButton.click();
 
 	}
+	
+	public Boolean userNameDisplayed() {
+		loginUsernameTextBox.isDisplayed();
+		return true;
+	}
+	
+	public Boolean welcomeUserDisplayed() {
+		welcomeUserHomePage.isDisplayed();
+		return true;
+		
+	}
+	
 
 }

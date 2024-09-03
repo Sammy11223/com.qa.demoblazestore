@@ -4,6 +4,8 @@ package com.demoblazestore.test;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -71,6 +73,13 @@ public class a_BaseTestPage extends DriverScripts {
 		
 		
 	}
+	
+	
+	/*public static void waitForTextBoxElement(WebElement element, String textValue) {
+	    wait.until(ExpectedConditions.textToBePresentInElementValue(element,textValue));
+
+		
+	}*/
 
 	@AfterMethod
 	// , whenever there is a failure use ItESTrESULT in aftermethod, from testNg

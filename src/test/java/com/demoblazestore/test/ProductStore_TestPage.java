@@ -27,7 +27,9 @@ public class ProductStore_TestPage extends a_BaseTestPage {
 		Thread.sleep(3000);	
 		*/
 		loginpage.loginLink_click();
+		
 		loginpage.userName_Entry("jen1000");
+		Thread.sleep(4000);
 		loginpage.passwordEntry("jkl122");
 		loginpage.loginButtonClick();
 		Thread.sleep(3000);	
@@ -48,13 +50,14 @@ public class ProductStore_TestPage extends a_BaseTestPage {
 		accessthelogin_link();
 		//validate the welcome text
 		//now go to product and add the samsung_6
-		Thread.sleep(4000);
+		//Thread.sleep(4000);
 		productpage.product_store_click();
+		//Thread.sleep(4000);
 		productpage.samsunggalaxy_s6_click();
 		productpage.addtoCart_samsung_6();
-		Thread.sleep(300);		
-		String gettext = driver.switchTo().alert().getText();
-		System.out.println(gettext);
+		Thread.sleep(4000);		
+	//	String gettext = driver.switchTo().alert().getText();
+		//System.out.println(gettext);
 //I creaTED the method for alert accept/dismiss in the driverscript, so that it can be 
 		//called here with just the method name [ could be accept or dismiss]
 		switchtoAlertAccept();
