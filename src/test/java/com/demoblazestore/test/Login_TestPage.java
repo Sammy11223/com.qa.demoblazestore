@@ -17,7 +17,8 @@ public class Login_TestPage extends a_BaseTestPage {
 		// Login login = new Login();
 		loginpage.loginLink_click();
 		loginpage.userNameDisplayed();
-		AssertJUnit.assertTrue(true);
+		Assert.assertTrue(true);
+
 
 	}
 
@@ -29,7 +30,7 @@ public class Login_TestPage extends a_BaseTestPage {
 		loginpage.passwordEntry("jkl122");
 		loginpage.loginButtonClick();
 		loginpage.welcomeUserDisplayed();
-		AssertJUnit.assertTrue(true);
+		Assert.assertTrue(true);
 		Thread.sleep(3000);
 	}
 }

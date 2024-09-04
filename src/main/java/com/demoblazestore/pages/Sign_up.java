@@ -57,4 +57,11 @@ public class Sign_up extends DriverScripts {
 	
 	}
 	
+	public static void assertTextEquals(String actualText, String expectedText) {
+		//actualText = alert.getText();
+        Assert.assertEquals(actualText, expectedText);
+    }
+	
+
+	
 }
