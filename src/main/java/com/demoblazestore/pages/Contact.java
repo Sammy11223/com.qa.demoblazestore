@@ -27,16 +27,16 @@ public class Contact extends DriverScripts {
 			return driver.getTitle();
 		}
 		
-		public void ContactEmailTextBox_sendText() {
-			ContactEmailTextBox.sendKeys("abc@abc.com");
+		public void ContactEmailTextBox_sendText(String email) {
+			ContactEmailTextBox.sendKeys(email);
 		}
 		
-		public void ContactNameTextBox_sendText() {
-			ContactNameTextBox.sendKeys("Jhon");
+		public void ContactNameTextBox_sendText(String name) {
+			ContactNameTextBox.sendKeys(name);
 		}
 		
-		public void MessageTextBox_sendText() {
-			MessageTextBox.sendKeys("Test Message for testing");
+		public void MessageTextBox_sendText(String messageText) {
+			MessageTextBox.sendKeys(messageText);
 		}
 		
 		public void CloseButton_click() {

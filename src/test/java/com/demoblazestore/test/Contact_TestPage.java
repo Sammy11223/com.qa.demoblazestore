@@ -1,8 +1,10 @@
 package com.demoblazestore.test;
 
+import org.openqa.selenium.Alert;
 import org.testng.annotations.Test;
 import com.demoblazestore.pages.Contact;
 import com.demoblazestore.pages.Home;
+import com.demoblazestore.pages.Sign_up;
 
 public class Contact_TestPage extends a_BaseTestPage {
 
@@ -10,23 +12,24 @@ public class Contact_TestPage extends a_BaseTestPage {
 	@Test(priority = 1)
 	public void testSendMessage() throws InterruptedException {
 		homepage.contactButton_click();
-		Contact contact = new Contact(); // Remove this line or comment it out
-		contact.ContactEmailTextBox_sendText(); // anywhere contact in this page should be replaced with contactpage , as this has been initialized already inside the a_BaseTestPage
-		contact.ContactNameTextBox_sendText();
-		contact.MessageTextBox_sendText();
+		contactpage.ContactEmailTextBox_sendText("abc@abc.com"); 
+		contactpage.ContactNameTextBox_sendText("Jhon");
+		contactpage.MessageTextBox_sendText("Test Message for testing");
 		Thread.sleep(3000);
-		contact.SendMessageButton_click();
+		contactpage.SendMessageButton_click();
 		Thread.sleep(3000);
-}
+		Alert alert = driver.switchTo().alert();
+		String actualText = alert.getText();
+		Sign_up.assertTextEquals(actualText, "Thanks for the message!!");	
+	}
 	@Test(priority = 2)
 	public void testCloseWithoutSendMessage() throws InterruptedException {
 		homepage.contactButton_click();
-		Contact contact = new Contact(); // Remove this line or comment it out
-		contact.ContactEmailTextBox_sendText(); // anywhere contact in this page should be replaced with contactpage , as this has been initialized already inside the a_BaseTestPage
-		contact.ContactNameTextBox_sendText();
-		contact.MessageTextBox_sendText();
+		contactpage.ContactEmailTextBox_sendText("abc@abc.com"); 
+		contactpage.ContactNameTextBox_sendText("Jhon");
+		contactpage.MessageTextBox_sendText("Test Message for testing");
 		Thread.sleep(3000);
-		contact.CloseButton_click();
+		contactpage.CloseButton_click();
 		Thread.sleep(3000);
-}
+	}
 }
