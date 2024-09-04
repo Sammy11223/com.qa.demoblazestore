@@ -1,6 +1,7 @@
 package com.demoblazestore.test;
 
 import org.openqa.selenium.Alert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.demoblazestore.pages.Contact;
 import com.demoblazestore.pages.Home;
@@ -31,5 +32,8 @@ public class Contact_TestPage extends a_BaseTestPage {
 		Thread.sleep(3000);
 		contactpage.CloseButton_click();
 		Thread.sleep(3000);
+		String title = driver.getTitle();
+		Assert.assertTrue(title.contains("STORE"));
+		
 	}
 }

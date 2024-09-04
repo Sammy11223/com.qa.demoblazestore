@@ -15,6 +15,7 @@ public class Home_TestPage extends a_BaseTestPage {
 		String text = homepage.getHomeText();
 		System.out.println(text);
 		Assert.assertTrue(true, text);
+		Assert.assertTrue(text.contains("Home"));
 		Thread.sleep(3000);
 		// logger.pass("Home icon text matched");
 	}
@@ -23,6 +24,7 @@ public class Home_TestPage extends a_BaseTestPage {
 	public void testContactclick() throws InterruptedException {
 		String text = homepage.getcontactButtonText();
 		System.out.println(text);
+		Assert.assertTrue(text.contains("Contact"));
 		Thread.sleep(3000);
 	}
 
@@ -30,6 +32,7 @@ public class Home_TestPage extends a_BaseTestPage {
 	public void testAboutusclick() throws InterruptedException {
 		String text = homepage.getaboutusButtonText();
 		System.out.println(text);
+		Assert.assertTrue(text.contains("About us"));
 		Thread.sleep(3000);
 	}
 
@@ -37,6 +40,7 @@ public class Home_TestPage extends a_BaseTestPage {
 	public void testCartclick() throws InterruptedException {
 		String text = homepage.getcartButtonText();
 		System.out.println(text);
+		Assert.assertTrue(text.contains("Cart"));
 		Thread.sleep(3000);
 	}
 
@@ -44,6 +48,7 @@ public class Home_TestPage extends a_BaseTestPage {
 	public void testLoginclick() throws InterruptedException {
 		String text = homepage.getloginButtonText();
 		System.out.println(text);
+		Assert.assertTrue(text.contains("Log in"));
 		Thread.sleep(3000);
 	}
 
@@ -52,6 +57,7 @@ public class Home_TestPage extends a_BaseTestPage {
 		Home home = new Home();
 		String text = homepage.getsignupButtonText();
 		System.out.println(text);
+		Assert.assertTrue(text.contains("Sign up"));
 		Thread.sleep(3000);
 	}
 
@@ -59,6 +65,7 @@ public class Home_TestPage extends a_BaseTestPage {
 	public void testphonesTabclick() throws InterruptedException {
 		String text = homepage.getphonesTabText();
 		System.out.println(text);
+		Assert.assertTrue(text.contains("Phones"));
 		Thread.sleep(3000);
 	}
 
@@ -66,6 +73,7 @@ public class Home_TestPage extends a_BaseTestPage {
 	public void testlaptopsTabclick() throws InterruptedException {
 		String text = homepage.getlaptopsTabText();
 		System.out.println(text);
+		Assert.assertTrue(text.contains("Laptops"));
 		Thread.sleep(3000);
 	}
 
@@ -73,6 +81,7 @@ public class Home_TestPage extends a_BaseTestPage {
 	public void testmonitorsTabclick() throws InterruptedException {
 		String text = homepage.getmonitorsTabText();
 		System.out.println(text);
+		Assert.assertTrue(text.contains("Monitors"));
 		Thread.sleep(3000);
 	}
 
@@ -82,6 +91,6 @@ public class Home_TestPage extends a_BaseTestPage {
 		Thread.sleep(3000);
 		String pageTitle = homepage.getHomePageTitle();
 		System.out.println(pageTitle);
-		Assert.assertTrue(true, pageTitle);
+		Assert.assertTrue(pageTitle.contains("STORE"));
 	}
 }
