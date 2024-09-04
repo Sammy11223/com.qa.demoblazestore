@@ -20,8 +20,7 @@ public class Signup_TestPage extends a_BaseTestPage {
 		Thread.sleep(3000);
 		Alert alert = driver.switchTo().alert();
 		String actualText = alert.getText();
-		Sign_up.assertTextEquals(actualText, "Sign up successful.");
-		
+		Sign_up.assertTextEquals(actualText, "Sign up successful.");	
 	}
 	
 	
@@ -29,7 +28,6 @@ public class Signup_TestPage extends a_BaseTestPage {
 	public void testPopupTextVerification() {
 		signuppage.signupLink_click();
 		signuppage.signupButtonClick();
-       // signuppage.signupPopupTextVerification();
 		Alert alert = driver.switchTo().alert();
 		String actualText = alert.getText();
 		Sign_up.assertTextEquals(actualText, "Please fill out Username and Password.");
